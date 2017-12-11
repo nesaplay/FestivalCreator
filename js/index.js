@@ -202,7 +202,7 @@ const UIControler = (() => {
   function displayTotalLength(tLength = '-') {
     document.querySelector(
       DOMStrings.containerTotalLength
-    ).textContent = String(tLength);
+    ).textContent = `${String(tLength)} min`;
   }
 
   function resetMoviesField() {
@@ -290,6 +290,8 @@ const mainControler = ((dataCtrl, UICtrl) => {
     document
       .querySelector(buttonAddMovieToProgram)
       .addEventListener('click', ctrlAddMovieToProgram);
+
+    $('select.dropdown').dropdown();
   }
 
   function ctrlUpdateTotalLength() {
@@ -374,5 +376,3 @@ const mainControler = ((dataCtrl, UICtrl) => {
 })(dataControler, UIControler);
 
 mainControler.init();
-
-$('select.dropdown').dropdown();
