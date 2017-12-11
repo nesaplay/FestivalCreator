@@ -34,7 +34,7 @@
 
                 <!-- Error message initialy empty -->
                 <div class="ui form warning">
-                    <div class="movie-error error ui warning message" id="movie-error"></div>
+                    <div class="movie-error error ui warning message render-sizing" id="movie-error"></div>
                 </div>
 
                 <!-- Crete movie button -->
@@ -42,7 +42,7 @@
 
                 <!-- Movie list place holder -->
                 <div class="ui form success">
-                    <div class="movie-list print-list ui success message" id="movie-list"></div>
+                    <div class="movie-list print-list ui success message render-sizing" id="movie-list"></div>
                 </div>
                 <div class="total-length">
                     All movies length:
@@ -57,11 +57,13 @@
                     <input type="date" name="program-date" class="program-date">
                 </div>
                 <!-- Error message initialy empty -->
-                <div class="program-error error"></div>
+                <div class="ui form warning">
+                    <div class="program-error error ui warning message render-sizing" id="program-error"></div>
+                </div>
 
                 <button class="ui button create-program" type="button">Create program</button>
                 <div class="ui form success">
-                    <div class="program-list ui success message" id="program-list"></div>
+                    <div class="program-list ui success message render-sizing" id="program-list"></div>
                 </div>
             </fieldset>
 
@@ -85,7 +87,7 @@
 
                 <button class="ui button add-movie" type="button">Add movie to program</button>
                 <div class="ui form success">
-                    <div class="movie-program-list ui success message" id="movie-program-list"></div>
+                    <div class="movie-program-list ui success message render-sizing" id="movie-program-list"></div>
                 </div>
             </fieldset>
         </form>

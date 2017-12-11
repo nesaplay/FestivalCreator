@@ -22,14 +22,6 @@ form {
     margin-bottom: 10px;
 }
 
-#movie-list {
-    margin: 10px 0;
-}
-
-#program-list {
-    margin: 10px 0;
-}
-
-#movie-program-list {
-    margin: 10px 0;
+.render-sizing {
+    margin: 10px 0 !important;
 }

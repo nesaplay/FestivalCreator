@@ -228,6 +228,7 @@ const UIControler = (() => {
 
   function renderMovieProgramJoint() {
     const movieField = document.getElementById(DOMStrings.displayAddedMovie);
+    const movieFieldOption = movieField.options[movieField.selectedIndex];
     const programField = document.getElementById(
       DOMStrings.displayAddedProgram
     );
@@ -236,7 +237,7 @@ const UIControler = (() => {
     );
 
     let paragElement = document.createElement('p');
-    let result = `${movieField.textContent} has been added to: ${
+    let result = `${movieFieldOption.textContent} has been added to: ${
       programField.textContent
     } program!`;
     let resultNode = document.createTextNode(result);
