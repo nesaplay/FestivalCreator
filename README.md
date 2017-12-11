@@ -11,4 +11,9 @@ I'm dividing my code in separate logical modules (UI, DATA and MAIN) by using Mo
     -   MVC-like data structure
     -   Encapsulation
     -   Prototypes
+    -   Form Validation
 
+# Stack
+
+    -   ES5 + ES6
+    -   Semantic UI
