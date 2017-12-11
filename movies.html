@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Movie festival</h1>
+        <form name="movie" id="fieldset-movie">
+            <h3>Movie</h3>
+            <fieldset id="firstField" class="ui form">
+                <div class="field">
+                    <label>Title</label>
+                    <input type="text" name="movie-title" class="movie-title" placeholder="Title" required>
+                </div>
+                <div class="field">
+                    <label>Length (min)</label>
+                    <input type="number" name="movie-length" class="movie-length" placeholder="Length in min" required>
+                </div>
+                <div class="field">
+                    <label>Genre</label>
+                    <select name="genre-select" id="genre-select" class="genre-select ui search dropdown">
+                        <option value="">-</option>
+                        <option value="drama">Drama</option>
+                        <option value="action">Action</option>
+                        <option value="horror">Horror</option>
+                        <option value="commedy">Commedy</option>
+                    </select>
+                </div>
+
+                <!-- Error message initialy empty -->
+                <div class="ui form warning">
+                    <div class="movie-error error ui warning message" id="movie-error"></div>
+                </div>
+
+                <!-- Crete movie button -->
+                <button class="ui button create-movie" type="button">Create movie</button>
+
+                <!-- Movie list place holder -->
+                <div class="ui form success">
+                    <div class="movie-list print-list ui success message" id="movie-list"></div>
+                </div>
+                <div class="total-length">
+                    All movies length:
+                    <span></span>
+                </div>
+            </fieldset>
+
+            <h3>Program</h3>
+            <fieldset class="ui form">
+                <div class="field">
+                    <label>Date</label>
+                    <input type="date" name="program-date" class="program-date">
+                </div>
+                <!-- Error message initialy empty -->
+                <div class="program-error error"></div>
+
+                <button class="ui button create-program" type="button">Create program</button>
+                <div class="ui form success">
+                    <div class="program-list ui success message" id="program-list"></div>
+                </div>
+            </fieldset>
+
+            <h3>Create Festival</h3>
+
+            <fieldset class="ui form">
+                <div class="field">
+                    <label for="movie-select">Movie</label>
+                    <select name="movie-select" id="movie-select" class="movie-select ui search dropdown">
+                        <option value="">-</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="program-select">Program</label>
+                    <select name="program-select" id="program-select" class="program-select ui search dropdown">
+                        <option value="">-</option>
+                    </select>
+                </div>
+
+                <div class="assign-error error"></div>
+
+                <button class="ui button add-movie" type="button">Add movie to program</button>
+                <div class="ui form success">
+                    <div class="movie-program-list ui success message" id="movie-program-list"></div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="js/semantic.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
